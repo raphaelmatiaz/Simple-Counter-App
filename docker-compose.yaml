@@ -1,0 +1,9 @@
+version: 'latest'
+services:
+  counterapp:
+    build: 
+      container_name: counter
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
